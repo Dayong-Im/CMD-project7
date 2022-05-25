@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cute+Font&family=Do+Hyeon&family=Gaegu:wght@700&family=Gugi&family=Hahmlet:wght@300&family=IBM+Plex+Sans+KR:wght@500&family=Inspiration&family=Koulen&family=Lora&family=Nanum+Gothic+Coding:wght@400;700&family=Noto+Sans+KR:wght@500&family=Pinyon+Script&family=Single+Day&display=swap');
+body{
+    font-family: 'IBM Plex Sans KR';
+}
+
 /* 메인 콘텐트 */
 #main_content { position: relative; width: 1000px; height: 400px; margin: 0 auto; }
 
@@ -5,12 +10,23 @@
 #join_box {	width: 600px;	margin: 0 auto; }
 #join_box h2 { 	border-bottom: solid 1px #dddddd; padding-top: 50px; }
 #join_box .col1 { float: left;	width: 110px; margin-top: 4px; }
-#join_box .col2 { float: left;	width: 400px; }
+#join_box .col2 { float: left;	width: 420px; }
 #join_box .col3 { float: left; }
+#join_box .col3 button{
+    background-color: #304ffe;
+    color: white;
+    font-family: 'IBM Plex Sans KR';}
+
 #join_box .form input { width: 390px;	height: 22px; }
 #join_box .form { height: 38px; }
 #join_box .id {	margin-top: 20px; }
 #join_box input[name=email1] { width: 100px; }
 #join_box input[name=email2] { width: 275px; }
 #join_box .bottom_line { margin-top: 10px;	border-bottom: solid 1px #cccccc; }
-#join_box .buttons { text-align: right;	margin: 20px 100px 0 0; }
+#join_box .buttons { text-align: right;	margin: 20px 0px 0 0; }
+#join_box .buttons button
+{
+    background-color: #304ffe;
+    color: white;
+    font-family: 'IBM Plex Sans KR';
+}

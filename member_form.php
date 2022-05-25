@@ -79,7 +79,7 @@
     </header>
 	<section>
 		<div id="main_img_bar">
-            <img src="./img/main_img.png">
+            <!-- 이미지 넣는 곳 -->
         </div>
         <div id="main_content">
       		<div id="join_box">
@@ -121,7 +121,13 @@
 			       	<div class="form email">
 				        <div class="col1">이메일</div>
 				        <div class="col2">
-							<input type="text" name="email1">@<input type="text" name="email2">
+							<input type="text" name="email1">@
+                            <select style = "width: 200px;">
+                                <option value="">이메일 선택</option>
+                                <option value="naver.com">naver.com</option>
+                                <option value="daum.net">daum.net</option>
+                                <option value="google.com">google.com</option>
+                            </select>
 				        </div>                 
 			       	</div>
 			       	<div class="clear"></div>

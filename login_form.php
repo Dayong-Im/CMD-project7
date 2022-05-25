@@ -2,7 +2,7 @@
 <html>
 <head> 
 <meta charset="utf-8">
-<title>PHP 프로그래밍 입문</title>
+<title>UNI League</title>
 <link rel="stylesheet" type="text/css" href="./css/common.css">
 <link rel="stylesheet" type="text/css" href="./css/login.css">
 <script type="text/javascript" src="./js/login.js"></script>
@@ -13,7 +13,7 @@
     </header>
 	<section>
 		<div id="main_img_bar">
-            <img src="./img/main_img.png">
+			<!-- 이미지 넣는 곳 -->
         </div>
         <div id="main_content">
       		<div id="login_box">
@@ -27,7 +27,7 @@
                     <li><input type="password" id="pass" name="pass" placeholder="비밀번호" ></li> <!-- pass -->
                   	</ul>
                   	<div id="login_btn">
-                      	<a href="#"><img src="./img/login.png" onclick="check_input()"></a>
+                      	<a href="#"><button onclick="check_input()">로그인</button></a>
                   	</div>		    	
            		</form>
         		</div> <!-- login_form -->

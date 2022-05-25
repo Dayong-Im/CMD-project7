@@ -1,7 +1,7 @@
 
         <div id="main_img_bar">
             <img src="./img/img1.jpg">
-            <img src="./img/tot.jpg">
+            <img id = "center" src="./img/tot.jpg">
             <img src="./img/img2.jpeg">
         </div>
         <div id="main_content">

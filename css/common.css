@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cute+Font&family=Gaegu:wght@700&family=Gugi&family=Inspiration&family=Lora&family=Noto+Sans+KR:wght@500&family=Pinyon+Script&family=Single+Day&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cute+Font&family=Do+Hyeon&family=Gaegu:wght@700&family=Gugi&family=Hahmlet:wght@300&family=Inspiration&family=Koulen&family=Lora&family=Noto+Sans+KR:wght@500&family=Pinyon+Script&family=Single+Day&display=swap');/* 마진 패딩 초기화 */
-* { padding: 0; margin: 0; }
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cute+Font&family=Do+Hyeon&family=Gaegu:wght@700&family=Gugi&family=Hahmlet:wght@300&family=IBM+Plex+Sans+KR:wght@500&family=Inspiration&family=Koulen&family=Lora&family=Nanum+Gothic+Coding:wght@400;700&family=Noto+Sans+KR:wght@500&family=Pinyon+Script&family=Single+Day&display=swap');
 /* 페이지 기본 글꼴과 크기 설정 */
-body { font-family: "돋움";   font-size: 14px; }
+body { font-family: "돋움";   font-size: 14px; margin: 0; padding: 0;}
 img { border: 0;}
 ul { list-style-type: none; }
 /* <a> 태그 기본 설정 */
@@ -13,10 +12,10 @@ a:visited { text-decoration:none; color: #222222; }
 a:active { text-decoration:none; color: #222222; }
 /* 상단 헤더 */
 #top { position: relative; width: 1000px; height: 80px; margin: 0 auto; }
-#top h3 { position: absolute; top: 5px; left: 40px; font-size: 40px; font-family: 'Bebas Neue';}
-#top #top_menu { float: right; margin: 30px 60px 0 0;}
-#top #top_menu li { display: inline; font-family: 'monospace'; font-weight: 100;}
-#menu_bar { height: 48px; background-color: #002984; font-size: 16px; }
+#top h3 { position: absolute; top: -30px; left: 40px; font-size: 40px; font-family: 'Bebas Neue', cursive;}
+#top #top_menu { float: right; margin: 30px 60px 0 0; font-family: 'IBM Plex Sans KR'}
+#top #top_menu li { display: inline;}
+#menu_bar { width: 1550px; height: 48px; background-color: #002984; font-size: 16px; font-family: 'IBM Plex Sans KR'}
 #menu_bar ul { width: 1000px; margin: 0 auto; padding: 14px 0 0 40px; }
 #menu_bar li { display: inline; margin-left: 90px; color: white; }
 #menu_bar a:link { color: white; }
@@ -24,13 +23,17 @@ a:active { text-decoration:none; color: #222222; }
 #menu_bar a:visited { color: white; }
 #menu_bar a:active { color: white; }
 /* 메인 이미지 */
-#main_img_bar { height: 230px; text-align: center; background-color: #3f51b5; }
+#main_img_bar { width: 1550px; height: 230px; text-align: center; background-color: #3f51b5; }
 #main_img_bar img{
-    width: 500px; 
+    width: 480px; 
     height: 230px;
 }
+#main_img_bar #center{
+    margin-left: 20px;
+    margin-right: 20px;
+}
 /* 하단 푸터 */
-footer { height: 100px; background-color: #002984; }
+footer { width: 1550px; height: 100px; background-color: #002984; }
 #footer_content { position: relative; width: 1000px; margin: 0 auto; color: #dddddd; }
 #footer_logo { position: absolute; top: 30px; left: 50px; font-size: 16px; }
 #footer_logo span { color: yellow; }
