@@ -2,7 +2,7 @@
 <html>
 <head> 
 <meta charset="utf-8">
-<title>PHP 프로그래밍 입문</title>
+<title>UNI League</title>
 <link rel="stylesheet" type="text/css" href="./css/common.css">
 <link rel="stylesheet" type="text/css" href="./css/board.css">
 <script>
@@ -29,7 +29,6 @@
 </header>  
 <section>
 	<div id="main_img_bar">
-        <img src="./img/main_img.png">
     </div>
 	<div id="board_box">
 		<h3 id="board_title">
@@ -57,8 +56,8 @@
 				</li>
 			</ul>
 			<ul class="buttons">
-				<li><button type="button" onclick="check_input()">완료</button></li>
-				<li><button type="button" onclick="location.href='board_list.php'">목록</button></li>
+				<li><button id = "clear_bt" type="button" onclick="check_input()">완료</button></li>
+				<li><button id = "list_bt" type="button" onclick="location.href='board_list.php'">목록</button></li>
 			</ul>
 		</form>
 	</div> <!-- board_box -->
