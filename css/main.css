@@ -2,6 +2,25 @@
 
 /* 메인 콘텐트 */
 #main_content { position: relative; width: 1550px; height: 240px; margin: 0 auto; background-color: #757de8; font-family: 'IBM Plex Sans KR'}
+#main_content ul{
+    padding: 0;
+}
+#main_content #latest a{
+    float: right;
+    margin-top: 20px;
+}
+#main_content #latest button{
+    background-color: #2962ff;
+    color: white;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#main_content #latest button:hover{
+    color: #2962ff;
+    background-color: white;
+}
 #latest { position: absolute; top: 30px; left: 50px; }
 #latest h4 { width: 500px; font-size: 16px; padding-bottom: 5px; border-bottom: solid 1px #dddddd; }
 #latest ul { margin-top: 20px; }
@@ -12,7 +31,7 @@
 #latest span:nth-child(3) { width: 100px; }
 #point_rank { position: absolute; top: 30px; left: 590px; }
 #point_rank h4 { width: 350px; font-size: 16px; padding-bottom: 5px; border-bottom: solid 1px #dddddd; }
-#point_rank ul { margin-top: 20px; }
+#point_rank ul { margin-top: 20px;}
 #point_rank li { margin-top: 8px; margin-left: 15px; }
 #point_rank span { display: inline-block; }
 #point_rank span:nth-child(1) { width: 50px; }

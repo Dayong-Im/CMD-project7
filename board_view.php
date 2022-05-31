@@ -12,7 +12,6 @@
 </header>  
 <section>
 	<div id="main_img_bar">
-        <img src="./img/main_img.png">
     </div>
 		<div id="board_box">
 			<h3 class="title">

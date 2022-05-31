@@ -31,5 +31,7 @@
         }
     }
 ?>
+            </ul>
+            <a href = "./board_list.php"><button>목록 보기</button></a>
         </div>
 </div>
