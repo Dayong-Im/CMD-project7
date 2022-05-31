@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cute+Font&family=Do+Hyeon&family=Gaegu:wght@700&family=Gugi&family=Hahmlet:wght@300&family=IBM+Plex+Sans+KR:wght@500&family=Inspiration&family=Koulen&family=Lora&family=Nanum+Gothic+Coding:wght@400;700&family=Noto+Sans+KR:wght@500&family=Pinyon+Script&family=Single+Day&display=swap');
+body{
+    font-family: 'IBM Plex Sans KR';
+}
+    *{-webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    #premierleague-table{
+        position: relative; width: 100%; margin-top: 40px; 
+    }
+    #premierleague-table-header{
+        background-color: #37003c;
+        margin-top: -2rem;
+        background-image: url(../i/bg-elements/heading-bg-desktop.svg);
+        background-position: 100% 100%;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        margin-bottom: 4rem;
+        padding: 4rem 0 0.2rem;
+        position: relative;
+    }
+    #premierleague-table-header{
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        float: left;
+        padding-left: 3.78788%;
+        padding-right: 3.78788%;
+        position: relative;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    #premierleague-table-header>h4{
+        color: #fff;
+        float: left;
+        max-width: 70%;
+        font-size: 5rem;
+    }
+    .tab-bar{
+        clear: left;
+        padding-top: 10px;
+    }
+    .tablist li.active {
+        background: #fff;
+        color: #2f2f2f;
+        border-bottom: none;
+    }
+    .tablist li:not(:last-child) {
+        margin-right: 0.5rem;
+    }
+    .tablist li {
+        display: inline-block;
+        position: relative;
+        padding: 1.5rem 3rem;
+        font-size: 1.3rem;
+        text-decoration: none;
+        text-align: center;
+        background-color: #ebebe6;
+        color: #6c6c6c;
+        cursor: pointer;
+        transition: all .2s;
+        border-radius: 3px 3px 0 0;
+        font-family: PremierSans-Bold,Arial,Helvetica Neue,Helvetica,sans-serif;
+        font-weight: 400;
+    }
+
+    .premierleague-table-content{
+        text-align: center;
+    }
+    
+    table{
+        width: 80%;
+        text-align: center;
+        font-size: 1.5rem;
+        border-collapse: collapse;
+        border-spacing: 0;
+        border: solid 1px black;
+    }
+    thead{
+        display: table-header-group;
+        vertical-align: middle;
+        border-color: inherit;
+        border: solid 1px black;
+    } 
+    table tr{
+        display: table-row;
+        vertical-align: inherit;
+        border-color: inherit;
+        border: solid 1px black;
+    }
+    table th {
+        color: #666;
+        font-size: 1.2rem;
+        vertical-align: middle;
+        border: solid 1px black;
+    }
+    .widget-match-standings__team--full-name{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: none;
+        text-decoration: none;
+    }
+
+    .team-logo{
+        text-align: start;
+    }
