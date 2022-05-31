@@ -32,11 +32,11 @@
         </div>
         <div id="menu_bar">
             <ul>  
-                <li><a href="index.php">프리미어리그</a></li>
-                <li><a href="message_form.php">라리가</a></li>                                
-                <li><a href="#">분데스리가</a></li>
-                <li><a href="index.php">세리에A</a></li>
-                <li><a href="#">리그앙1</a></li>
+                <li><a href="table_epl.php">프리미어리그</a></li>
+                <li><a href="table_laliga.php">라리가</a></li>                                
+                <li><a href="table_bun.php">분데스리가</a></li>
+                <li><a href="table_serie.php">세리에A</a></li>
+                <li><a href="table_ligue.php">리그앙1</a></li>
                 <li><a href="board_form.php">게시판</a></li>
             </ul>
         </div>
