@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cute+Font&family=Do+Hyeon&family=Gaegu:wght@700&family=Gugi&family=Hahmlet:wght@300&family=IBM+Plex+Sans+KR:wght@500&family=Inspiration&family=Koulen&family=Lora&family=Nanum+Gothic+Coding:wght@400;700&family=Noto+Sans+KR:wght@500&family=Pinyon+Script&family=Single+Day&display=swap');
 body{
     font-family: 'IBM Plex Sans KR';
+    font-size: 14px;
+    color: #444444;
 }
     
     *{-webkit-font-smoothing: antialiased;
@@ -9,105 +11,136 @@ body{
         padding: 0;
         margin: 0;
     }
-
-    #premierleague-table{
-        position: relative; width: 100%; margin-top: 40px; 
+    a { text-decoration:none; color: black;}
+    body {
+        font-size: 14px;
+        color: #444444;
     }
-    #premierleague-table-header{
-        background-color: #37003c;
-        margin-top: -2rem;
-        background-image: url(../i/bg-elements/heading-bg-desktop.svg);
-        background-position: 100% 100%;
-        background-repeat: no-repeat;
-        background-size: auto 100%;
-        margin-bottom: 4rem;
-        padding: 4rem 0 0.2rem;
-        position: relative;
+    li {
+        list-style-type: none;
     }
-    #premierleague-table-header{
-        box-sizing: border-box;
+    header {
+        position: fixed;
+        top: 0;
         width: 100%;
-        height: 100%;
+        height: 100px;
+        background-color: white;
+    }
+    #headerDiv{
+        width: 1140px;
+        margin: 0 auto;
+    }
+    #headerDiv img{
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    #logo {
         float: left;
-        padding-left: 3.78788%;
-        padding-right: 3.78788%;
-        position: relative;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        margin: 20px 0 0 20px;
+        font-size: 40px;
+        font-family: "Typo_SsangmunDong";
+        color: rgb(56, 56, 56);
     }
-    
-    #premierleague-table-header>h4{
-        color: #fff;
+    #menus {
+        float: right;
+    }
+    #main_menu {
+        margin-top: 40px;
+        font-family: 'Typo_SsangmunDong';
+        font-size: 20px;
+        color: black;
+    }
+    #main_menu li {
+        display: inline;
+        margin-left: 80px;
+    }
+    #main_menu li:hover > a{
+        color: cadetblue;
+    }
+    #main_img {
+        width: 100%;
+        height: 700px;
+        background-image: url('../img/lig/lig1.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 20px;
+    }
+    #contents {
+        width: 1140px;
+        margin: 0 auto;
+    }
+    #sub_menu {
+        width: 150px;
+        float: right;
+        margin-top: 75px;
+        margin-right: 150px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+        border: solid 1px rgb(56, 56, 56);
+    }
+    #sub_menu li {
+        font-family: "Typo_SsangmunDong";
+        font-size: 20pt;
+        text-align: center;
+        padding: 10px;
+    }
+    #selected{
+        background-color: rgb(56, 56, 56);
+        color: white;
+        border-radius: 15px;
+    }
+    footer {
+        clear: both;
+        width: 100%;
+        height: 150px;
+        margin-top: 30px;
+        background-color: #2c2a29;
+    }
+    #footer_box {
+        width: 1140px;
+        margin: 0 auto;
+    }
+    #footer_logo {
         float: left;
-        max-width: 70%;
-        font-size: 5rem;
+        margin: 50px 0 0 30px;
+        font-size: 24pt;
+        font-family: "Typo_SsangmunDong";
+        color: white;
     }
-    .tab-bar{
-        clear: left;
-        padding-top: 10px;
+    #address {
+        float: right;
+        margin: 50px 30px 0 0;
+        color: white;
     }
-    .tablist li.active {
-        background: #fff;
-        color: #2f2f2f;
-        border-bottom: none;
-    }
-    .tablist li:not(:last-child) {
-        margin-right: 0.5rem;
-    }
-    .tablist li {
-        display: inline-block;
-        position: relative;
-        padding: 1.5rem 3rem;
-        font-size: 1.3rem;
-        text-decoration: none;
-        text-align: center;
-        background-color: #ebebe6;
-        color: #6c6c6c;
-        cursor: pointer;
-        transition: all .2s;
-        border-radius: 3px 3px 0 0;
-        font-family: PremierSans-Bold,Arial,Helvetica Neue,Helvetica,sans-serif;
-        font-weight: 400;
-    }
-
-    .premierleague-table-content{
+    #season{
+        width: 400px;
+        margin-top: 25px;
+        margin-left: 370px;
+        font-family: "Typo_SsangmunDong";
         text-align: center;
     }
-    
-    table{
-        width: 80%;
+    th, td {
+        width: 80px;
+        height: 30px;
+        padding: 6px;
+        border-bottom: solid 1px #000000;
         text-align: center;
-        font-size: 1.5rem;
+    }
+    table {
+        margin-top: 25px;
+        border-top: solid;
+        border-bottom: solid;
+        border-left: none;
+        border-right: none;
         border-collapse: collapse;
-        border-spacing: 0;
-        border: solid 1px black;
+        font-family: "나눔고딕";
     }
-    thead{
-        display: table-header-group;
-        vertical-align: middle;
-        border-color: inherit;
-        border: solid 1px black;
-    } 
-    table tr{
-        display: table-row;
-        vertical-align: inherit;
-        border-color: inherit;
-        border: solid 1px black;
+    .team{
+        text-align: left; 
+        width: 200px;
     }
-    table th {
-        color: #666;
-        font-size: 1.2rem;
-        vertical-align: middle;
-        border: solid 1px black;
-    }
-    .widget-match-standings__team--full-name{
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: none;
-        text-decoration: none;
-    }
-
-    .team-logo{
-        text-align: start;
-    }
+    .t   { text-align: left; }
+    .logo{ text-align: left; }
+    .seq { text-align: center; }
+    .point{ font-weight: bold; }
