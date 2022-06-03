@@ -1,8 +1,10 @@
 
         <div id="main_img_bar">
-            <img src="./img/img1.jpg">
-            <img id = "center" src="./img/tot.jpg">
-            <img src="./img/img2.jpeg">
+            <img src = "./img/epl.jpg">
+            <img src = "./img/Laliga.png">
+            <img src = "./img/bundesliga.png">
+            <img src = "./img/seria.jpg">
+            <img src = "./img/ligue.png">
         </div>
         <div id="main_content">
             <div id="latest">
