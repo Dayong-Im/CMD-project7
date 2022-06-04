@@ -24,9 +24,9 @@ h3 {
    }
    else
    {
-      $con = mysqli_connect("localhost", "user1", "12345", "sample");
+      include ('db/db.php');
+      $con = mysqli_connect($db_host, $db_user, $db_pw, $db_name);
 
- 
       $sql = "select * from members where id='$id'";
       $result = mysqli_query($con, $sql);
 
@@ -41,7 +41,7 @@ h3 {
       {
          echo "<li>".$id." 아이디는 사용 가능합니다.</li>";
       }
-    
+      
       mysqli_close($con);
    }
 ?>

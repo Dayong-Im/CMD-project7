@@ -37,7 +37,8 @@
 	else
 		$page = 1;
 
-	$con = mysqli_connect("localhost", "user1", "12345", "sample");
+	include ('db/db.php');
+	$con = mysqli_connect($db_host, $db_user, $db_pw, $db_name);
 	$sql = "select * from board order by num desc";
 	$result = mysqli_query($con, $sql);
 	$total_record = mysqli_num_rows($result); // 전체 글 수

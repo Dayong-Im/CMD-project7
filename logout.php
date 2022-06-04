@@ -10,4 +10,5 @@
           location.href = 'new_main.php';
          </script>
        ");
+
 ?>

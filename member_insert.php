@@ -8,8 +8,8 @@
     $email = $email1."@".$email2;
     $regist_day = date("Y-m-d (H:i)");  // 현재의 '년-월-일-시-분'을 저장
 
-              
-    $con = mysqli_connect("localhost", "user1", "12345", "sample");
+    include ('db/db.php');
+    $con = mysqli_connect($db_host, $db_user, $db_pw, $db_name);
 
 	$sql = "insert into members(id, pass, name, email, regist_day, level, point) ";
 	$sql .= "values('$id', '$pass', '$name', '$email', '$regist_day', 9, 0)";
@@ -18,10 +18,8 @@
     mysqli_close($con);     
 
     echo "
-	      <script>
-	          location.href = 'index.php';
-	      </script>
-	  ";
+            <script>
+                location.href = 'index.php';
+            </script>
+        ";
 ?>
-
-   
