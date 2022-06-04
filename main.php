@@ -12,7 +12,8 @@
                 <ul>
 <!-- 최근 게시 글 DB에서 불러오기 -->
 <?php
-    $con = mysqli_connect("localhost", "uniadmin", "1q2w3e4r!", "uni");
+    include ('db/db.php');
+    $con = mysqli_connect($db_host, $db_user, $db_pw, $db_name);
     $sql = "select * from board order by num desc limit 5";
     $result = mysqli_query($con, $sql);
 

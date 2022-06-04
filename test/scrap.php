@@ -1,5 +1,6 @@
 <?php
-$con = mysqli_connect("localhost", "uniadmin", "1q2w3e4r!", "uni");
+include ('../db/db.php');
+$con = mysqli_connect($db_host, $db_user, $db_pw, $db_name);
 
 require_once(__DIR__ . './vendor/autoload.php');
 

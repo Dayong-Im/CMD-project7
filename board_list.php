@@ -33,7 +33,8 @@
 	else
 		$page = 1;
 
-	$con = mysqli_connect("localhost", "uniadmin", "1q2w3e4r!", "uni");
+	include ('db/db.php');
+	$con = mysqli_connect($db_host, $db_user, $db_pw, $db_name);
 	$sql = "select * from board order by num desc";
 	$result = mysqli_query($con, $sql);
 	$total_record = mysqli_num_rows($result); // 전체 글 수

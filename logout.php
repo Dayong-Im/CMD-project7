@@ -6,8 +6,8 @@
   unset($_SESSION["userpoint"]);
   
   echo("
-       <script>
+        <script>
           location.href = 'index.php';
-         </script>
-       ");
+        </script>
+      ");
 ?>

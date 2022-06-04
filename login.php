@@ -2,20 +2,21 @@
     $id   = $_POST["id"];
     $pass = $_POST["pass"];
 
-    $con = mysqli_connect("localhost", "uniadmin", "1q2w3e4r!", "uni");
-   $sql = "select * from members where id='$id'";
-   $result = mysqli_query($con, $sql);
+    include ('db/db.php');
+    $con = mysqli_connect($db_host, $db_user, $db_pw, $db_name);
+    $sql = "select * from members where id='$id'";
+    $result = mysqli_query($con, $sql);
 
-   $num_match = mysqli_num_rows($result);
+    $num_match = mysqli_num_rows($result);
 
-   if(!$num_match) 
-   {
-     echo("
-           <script>
-             window.alert('등록되지 않은 아이디입니다!')
-             history.go(-1)
-           </script>
-         ");
+    if(!$num_match) 
+    {
+      echo("
+            <script>
+              window.alert('등록되지 않은 아이디입니다!')
+              history.go(-1)
+            </script>
+          ");
     }
     else
     {
@@ -27,13 +28,13 @@
         if($pass != $db_pass)
         {
 
-           echo("
+            echo("
               <script>
                 window.alert('비밀번호가 틀립니다!')
                 history.go(-1)
               </script>
-           ");
-           exit;
+            ");
+            exit;
         }
         else
         {
@@ -49,5 +50,5 @@
               </script>
             ");
         }
-     }        
+      }        
 ?>
