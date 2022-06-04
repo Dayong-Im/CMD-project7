@@ -1,0 +1,102 @@
+
+nav{
+    height: 10%;
+    border-bottom: solid 2px white;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .menu{
+    width: 7%;
+}
+
+
+/* 삼단 메뉴바 시작 */
+
+.navbar .menu i{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.sub-menu {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background-color: black;
+    transition: 0.5s;
+    z-index: 1;
+}
+.sub-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sub-menu ul li{
+    border-bottom: solid 1px white;;
+}
+
+.navbar .menu .sub-menu .sub-menu-list a{
+    color: white;
+    text-decoration: none;
+}
+
+.sub-menu{
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+    transition-duration: 0.5s;
+}
+.menu:hover > .sub-menu{
+    height: 100%;
+    width: 10%;
+    overflow: hidden;
+    margin-top: 30px;
+    text-align: center;
+}
+.sub-menu-list li {
+    line-height: 3rem;
+}
+
+.sub-menu .sub-menu-list{
+    margin-top: 50px;
+}
+
+/* 반응형 메뉴바 마지막 */
+
+.navbar #top{
+    width: 33%;
+    text-align: center;
+    margin-left: 23%;
+}
+
+.navbar #top h3 a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.navbar #top_menu{
+    width: 33%;
+}
+
+.navbar #top_menu ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar #top_menu ul li{
+    list-style: none;
+    margin-right: 20px;
+    color: white;
+}
+
+.navbar #top_menu ul li a{
+    text-decoration: none;
+    color: white;
+}

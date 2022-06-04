@@ -75,12 +75,9 @@
 </head>
 <body> 
 	<header>
-    	<?php include "header.php";?>
+        <?php include "new_main.php";?>
     </header>
 	<section>
-		<div id="main_img_bar">
-            <!-- 이미지 넣는 곳 -->
-        </div>
         <div id="main_content">
       		<div id="join_box">
           	<form  name="member_form" method="post" action="member_insert.php">
@@ -141,9 +138,6 @@
         	</div> <!-- join_box -->
         </div> <!-- main_content -->
 	</section> 
-	<footer>
-    	<?php include "footer.php";?>
-    </footer>
 </body>
 </html>
 
