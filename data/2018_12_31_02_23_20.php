@@ -27,7 +27,7 @@
 					<span class="col5">조회</span>
 				</li>
 <?php
-	$con = mysqli_connect("localhost", "user1", "12345", "sample");
+	$con = mysqli_connect("localhost", "uniadmin", "1q2w3e4r!", "uni");
 
 	$sql = "select * from board order by num desc";
 
