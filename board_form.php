@@ -7,6 +7,12 @@
 <link rel="stylesheet" type="text/css" href="./css/board.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <script src="https://kit.fontawesome.com/ef7a0bbb15.js" crossorigin="anonymous"></script>
+<style>
+	body{
+		width: 100%;
+		height: 100vh;
+	}
+</style>
 <script>
 	function check_input() {
 		if (!document.board_form.subject.value)
@@ -26,9 +32,9 @@
 </script>
 </head>
 <body> 
-<header>
-	<?php include "new_nav.php";?>
-</header>  
+	<header>
+		<?php include "new_nav.php";?>
+	</header>  
 <section>
 	<div id="big_board_box">
 		<div id="board_box">

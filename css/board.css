@@ -4,16 +4,23 @@
 body{
     font-family: 'IBM Plex Sans KR';
     background-color: black;
-    height: 90vh;
     margin: 0;
 }
 
 section{
     background-color: #212121;
     width :100%;
-    height: 97%;
+    height: 90%;
 }
 /* 게시판 글쓰기(board_form.php) */
+#big_board_box #board_box #board_title{
+    margin: 0;
+} 
+
+#board_box h3{
+    margin: 0;
+}
+
 #board_box {width :100%; margin-top: 100px;;
     color: white;}
 #board_box h3 {padding: 10px; border-bottom: solid 2px #ffc400; font-size: 20px; }
@@ -22,7 +29,8 @@ section{
 }
 #board_form span { display: inline-block; }
 #board_form .col1 { width: 150px; }
-#board_form li {	padding: 12px; border-bottom: solid 1px #dddddd; }
+#board_form li {padding: 12px; border-bottom: solid 1px #dddddd;
+}
 #board_form input { width: 500px; height: 25px; }
 #board_form textarea { width: 500px;	height: 150px; }
 #board_form #text_area {	position: relative;	height: 158px; }
@@ -33,7 +41,7 @@ section{
 #board_box .buttons button { padding: 5px 10px; cursor: pointer; }
 #board_box .buttons button{
     background-color: #ffc400;
-    color: white;
+    color: black;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -44,10 +52,20 @@ section{
     background-color: white;
 }
 /* 게시판 목록보기(board_list.php) */
-#board_list li { padding: 10px 0; border-bottom: solid 1px #dddddd; }
+#board_box #board_list{
+    list-style: none;
+}
+#board_list li { padding: 10px 0; border-bottom: solid 1px #dddddd;
+}
+#board_list li a{
+    text-decoration: none;
+}
 #board_list span { display: inline-block; text-align: center;}
 #board_list .col1 { width: 80px; }
-#board_list .col2 { width: 300px; text-align: left; }
+#board_list .col2 { width: 300px; text-align: left;}
+#board_list .col2 a{   
+    color: white;
+}
 #board_list .col3 { width: 100px; }
 #board_list .col4 { width: 40px; }
 #board_list .col5 { width: 180px; }

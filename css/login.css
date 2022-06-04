@@ -7,6 +7,10 @@ body{
     margin:auto;
 }
 
+section{
+    height: 67%;
+}
+
 #login_box { width: 27.8%;}
 #login_title { margin: 0; padding-bottom: 5px;	border-bottom: solid 2px #ffc400; }
 #login_title span {	font-size: 20px; font-weight: bold; color: white;}

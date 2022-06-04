@@ -3,7 +3,6 @@
 <head> 
 <meta charset="utf-8">
 <title>UNI League</title>
-<link rel="stylesheet" type="text/css" href="./css/common.css">
 <link rel="stylesheet" type="text/css" href="./css/board.css">
 <script>
   function check_input() {
@@ -25,7 +24,7 @@
 </head>
 <body> 
 <header>
-    <?php include "header.php";?>
+	<?php include "new_main.php";?>
 </header>  
 <section>
 	<div id="main_img_bar">

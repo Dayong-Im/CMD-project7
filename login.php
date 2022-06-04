@@ -45,7 +45,7 @@
 
             echo("
               <script>
-                location.href = 'index.php';
+                location.href = 'new_main.php';
               </script>
             ");
         }

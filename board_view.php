@@ -3,18 +3,18 @@
 <head> 
 <meta charset="utf-8">
 <title>UNI League</title>
-<link rel="stylesheet" type="text/css" href="./css/common.css">
 <link rel="stylesheet" type="text/css" href="./css/board.css">
+<link rel="stylesheet" type="text/css" href="./css/nav.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="https://kit.fontawesome.com/ef7a0bbb15.js" crossorigin="anonymous"></script>
 </head>
 <body> 
 <header>
-    <?php include "header.php";?>
+	<?php include "new_main.php";?>
 </header>  
 <section>
-	<div id="main_img_bar">
-    </div>
 		<div id="board_box">
-			<h3 class="title">
+			<h3 class="title" style = "margin: 0;">
 			게시판 > 내용보기
 		</h3>
 <?php
@@ -70,8 +70,5 @@
 		</ul>
 	</div> <!-- board_box -->
 </section> 
-<footer>
-    <?php include "footer.php";?>
-</footer>
 </body>
 </html>

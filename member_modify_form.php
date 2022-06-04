@@ -3,13 +3,15 @@
 <head> 
 <meta charset="utf-8">
 <title>UNI League</title>
-<link rel="stylesheet" type="text/css" href="./css/common.css">
 <link rel="stylesheet" type="text/css" href="./css/member.css">
+<link rel="stylesheet" type="text/css" href="./css/nav.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="https://kit.fontawesome.com/ef7a0bbb15.js" crossorigin="anonymous"></script>
 <script type="text/javascript" src="./js/member_modify.js"></script>
 </head>
 <body> 
 	<header>
-    	<?php include "header.php";?>
+		<?php include "new_nav.php";?>
     </header>
 <?php    
    	$con = mysqli_connect("localhost", "user1", "12345", "sample");
@@ -27,8 +29,6 @@
     mysqli_close($con);
 ?>
 	<section>
-		<div id="main_img_bar">
-        </div>
         <div id="main_content">
       		<div id="join_box">
           	<form  name="member_form" method="post" action="member_modify.php?id=<?=$userid?>">
@@ -80,9 +80,6 @@
         	</div> <!-- join_box -->
         </div> <!-- main_content -->
 	</section> 
-	<footer>
-    	<?php include "footer.php";?>
-    </footer>
 </body>
 </html>
 
