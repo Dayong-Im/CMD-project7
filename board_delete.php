@@ -23,7 +23,7 @@
     echo "
       <script>
         location.href = 'board_list.php?page=$page';
-      /script>
+      </script>
       ";
 ?>
 
