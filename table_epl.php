@@ -7,10 +7,14 @@
     <title>프리미어리그 순위표</title>
     <link rel="stylesheet" type="text/css" href="./css/common.css">
     <link rel="stylesheet" type="text/css" href="./css/table_epl.css">
+    <link rel="stylesheet" type="text/css" href="./css/nav.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ef7a0bbb15.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <?php include "header.php" ?>
+        <?php include "new_nav.php";?>
     </header>
     <section id="main_img"></section>
 
@@ -303,8 +307,5 @@
         </table>
 
     </section>
-    <footer>
-		<?php include "footer.php";?>
-    </footer>
 </body>
 </html>

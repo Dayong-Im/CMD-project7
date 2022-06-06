@@ -13,7 +13,7 @@ a:hover { text-decoration:none; color: #222222; }
 a:visited { text-decoration:none; color: #222222; }
 a:active { text-decoration:none; color: #222222; }
 /* 상단 헤더 */
-#top { position: relative; width: 100%; height: 10vh; margin: 0 auto; }
+#top { position: relative; width: 100%; height: 10vh; }
 #top h3 { position: absolute; margin-top: -1px; left: 40px; font-size: 40px; font-family: 'Bebas Neue', cursive;}
 #top #top_menu { float: right; margin: 30px 60px 0 0; font-family: 'IBM Plex Sans KR'}
 #top #top_menu li { display: inline;}
