@@ -92,7 +92,7 @@
                     $gainGoal  = $result["gainGoal"];
                     $loseGoal  = $result["loseGoal"];
                     $goalGap   = $result["goalGap"];
-                    $logo = "https://dthumb-phinf.pstatic.net/?src=https://sports-phinf.pstatic.net/team/wfootball/default/".$result["id"].".png&type=f25_25&refresh=1";
+                    $logo      = $result["logo"] ;
                 
                 ?>
                 <td class="seq"><?php echo $rank; ?></td>

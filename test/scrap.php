@@ -72,16 +72,17 @@ function insertTeam($con, $scrap_data, $league_code){
         $loseGoal  = (int) $json[$i]["loseGoal"];
         $goalGap   = (int) $json[$i]["goalGap"];
         $rank      = (int) $json[$i]["rank"];
+        $logo      = "img/".$league_code."/".$id.".png";
 
         $query = "insert into team(
                                     id, teamName, gameCount, gainpoint, 
                                     won, drawn, lost, gainGoal, loseGoal, 
-                                    goalGap, rank, leagueId
+                                    goalGap, rank, leagueId, logo
                                 )";
         $query.= "values(
                         '$id','$teamName','$gameCount','$gainPoint',
-                        '$won','$drawn','$lost','$gainGoal',
-                        '$loseGoal','$goalGap','$rank','$league_code'
+                        '$won','$drawn','$lost','$gainGoal', '$loseGoal',
+                        '$goalGap','$rank','$league_code', '$logo'
                         )";
         mysqli_query($con, $query);
     }
