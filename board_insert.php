@@ -1,5 +1,6 @@
 <meta charset="utf-8">
 <?php
+
     session_start();
     if (isset($_SESSION["userid"])) $userid = $_SESSION["userid"];
     else $userid = "";
@@ -72,7 +73,8 @@
 		$copied_file_name = "";
 	}
 	
-	$con = mysqli_connect("localhost", "uniadmin", "1q2w3e4r!", "uni");
+	include ('db/db.php');
+	$con = mysqli_connect($db_host, $db_user, $db_pw, $db_name);
 
 	$sql = "insert into board (id, name, subject, content, regist_day, hit,  file_name, file_type, file_copied) ";
 	$sql .= "values('$userid', '$username', '$subject', '$content', '$regist_day', 0, ";

@@ -8,7 +8,8 @@
     $email = $email1."@".$email2;
     $regist_day = date("Y-m-d (H:i)");  // 현재의 '년-월-일-시-분'을 저장
 
-    $con = mysqli_connect("localhost", "uniadmin", "1q2w3e4r!", "uni");
+    include ('db/db.php');
+    $con = mysqli_connect($db_host, $db_user, $db_pw, $db_name);
 
     $sql = "select * from members where id='$id'";         // check redundant id
     $result = mysqli_query($con, $sql);

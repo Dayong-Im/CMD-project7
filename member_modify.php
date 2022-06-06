@@ -7,8 +7,9 @@
     $email2  = $_POST["email2"];
 
     $email = $email1."@".$email2;
-          
-    $con = mysqli_connect("localhost", "uniadmin", "1q2w3e4r!", "uni");
+    
+    include ('db/db.php');
+    $con = mysqli_connect($db_host, $db_user, $db_pw, $db_name);
     $sql = "update members set pass='$pass', name='$name' , email='$email'";
     $sql .= " where id='$id'";
     mysqli_query($con, $sql);
@@ -16,10 +17,8 @@
     mysqli_close($con);     
 
     echo "
-	      <script>
-	          location.href = 'index.php';
-	      </script>
-	  ";
+            <script>
+                location.href = 'index.php';
+            </script>
+        ";
 ?>
-
-   

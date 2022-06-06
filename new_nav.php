@@ -26,7 +26,7 @@
                         <a href="table_ligue.php"><span class = "title">Ligue</span></a>
                     </li>
                     <li>
-                        <a href="board_form.php"><span class = "title">게시판</span></a>
+                        <a href="board_list.php"><span class = "title">게시판</span></a>
                     </li>
                 </ul>
             </div>

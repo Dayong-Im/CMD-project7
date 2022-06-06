@@ -1,9 +1,9 @@
 <?php
-
     $num   = $_GET["num"];
     $page   = $_GET["page"];
 
-    $con = mysqli_connect("localhost", "uniadmin", "1q2w3e4r!", "uni");
+    include ('db/db.php');
+    $con = mysqli_connect($db_host, $db_user, $db_pw, $db_name);
     $sql = "select * from board where num = $num";
     $result = mysqli_query($con, $sql);
     $row = mysqli_fetch_array($result);
@@ -23,7 +23,7 @@
     echo "
       <script>
         location.href = 'board_list.php?page=$page';
-      /script>
+      </script>
       ";
 ?>
 

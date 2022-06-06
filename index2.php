@@ -8,13 +8,13 @@
 </head>
 <body> 
 	<header>
-    	<?php include "header2.php";?>
+		<?php include "header2.php";?>
     </header>
 	<section>
-	    <?php include "main2.php";?>
+		<?php include "main2.php";?>
 	</section> 
 	<footer>
-    	<?php include "footer.php";?>
+		<?php include "footer.php";?>
     </footer>
 </body>
 </html>

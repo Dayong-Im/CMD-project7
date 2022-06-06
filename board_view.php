@@ -3,25 +3,26 @@
 <head> 
 <meta charset="utf-8">
 <title>UNI League</title>
-<link rel="stylesheet" type="text/css" href="./css/common.css">
 <link rel="stylesheet" type="text/css" href="./css/board.css">
+<link rel="stylesheet" type="text/css" href="./css/nav.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="https://kit.fontawesome.com/ef7a0bbb15.js" crossorigin="anonymous"></script>
 </head>
 <body> 
 <header>
-    <?php include "header.php";?>
+	<?php include "new_main.php";?>
 </header>  
 <section>
-	<div id="main_img_bar">
-    </div>
 		<div id="board_box">
-			<h3 class="title">
+			<h3 class="title" style = "margin: 0;">
 			게시판 > 내용보기
 		</h3>
 <?php
 	$num  = $_GET["num"];
 	$page  = $_GET["page"];
 
-	$con = mysqli_connect("localhost", "uniadmin", "1q2w3e4r!", "uni");
+	include ('db/db.php');
+    $con = mysqli_connect($db_host, $db_user, $db_pw, $db_name);
 	$sql = "select * from board where num=$num";
 	$result = mysqli_query($con, $sql);
 
@@ -43,7 +44,7 @@
 	$sql = "update board set hit=$new_hit where num=$num";   
 	mysqli_query($con, $sql);
 ?>		
-	    <ul id="view_content">
+		<ul id="view_content">
 			<li>
 				<span class="col1"><b>제목 :</b> <?=$subject?></span>
 				<span class="col2"><?=$name?> | <?=$regist_day?></span>
@@ -56,13 +57,13 @@
 						$file_size = filesize($file_path);
 
 						echo "▷ 첨부파일 : $file_name ($file_size Byte) &nbsp;&nbsp;&nbsp;&nbsp;
-			       		<a href='download.php?num=$num&real_name=$real_name&file_name=$file_name&file_type=$file_type'>[저장]</a><br><br>";
-			           	}
+						<a href='download.php?num=$num&real_name=$real_name&file_name=$file_name&file_type=$file_type'>[저장]</a><br><br>";
+						}
 				?>
 				<?=$content?>
 			</li>		
-	    </ul>
-	    <ul class="buttons">
+		</ul>
+		<ul class="buttons">
 				<li><button onclick="location.href='board_list.php?page=<?=$page?>'">목록</button></li>
 				<li><button onclick="location.href='board_modify_form.php?num=<?=$num?>&page=<?=$page?>'">수정</button></li>
 				<li><button onclick="location.href='board_delete.php?num=<?=$num?>&page=<?=$page?>'">삭제</button></li>
@@ -70,8 +71,5 @@
 		</ul>
 	</div> <!-- board_box -->
 </section> 
-<footer>
-    <?php include "footer.php";?>
-</footer>
 </body>
 </html>

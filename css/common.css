@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cute+Font&family=Do+Hyeon&family=Gaegu:wght@700&family=Gugi&family=Hahmlet:wght@300&family=IBM+Plex+Sans+KR:wght@500&family=Inspiration&family=Koulen&family=Lora&family=Nanum+Gothic+Coding:wght@400;700&family=Noto+Sans+KR:wght@500&family=Pinyon+Script&family=Single+Day&display=swap');
 /* 페이지 기본 글꼴과 크기 설정 */
 body { font-family: "돋움";   font-size: 14px; margin: 0; padding: 0;
-    hegith: 100vh;
+    height: 100vh;
 }
 img { border: 0;}
 ul { list-style-type: none; }

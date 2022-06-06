@@ -3,11 +3,15 @@
 <head> 
 <meta charset="utf-8">
 <title>UNI League</title>
-<link rel="stylesheet" type="text/css" href="./css/common.css">
 <link rel="stylesheet" type="text/css" href="./css/board.css">
 <link rel="stylesheet" type="text/css" href="./css/nav.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <script src="https://kit.fontawesome.com/ef7a0bbb15.js" crossorigin="anonymous"></script>
+<style>
+	body{
+		height: 100vh;
+	}
+</style>
 </head>
 <body> 
 <header>
@@ -33,7 +37,8 @@
 	else
 		$page = 1;
 
-	$con = mysqli_connect("localhost", "uniadmin", "1q2w3e4r!", "uni");
+	include ('db/db.php');
+	$con = mysqli_connect($db_host, $db_user, $db_pw, $db_name);
 	$sql = "select * from board order by num desc";
 	$result = mysqli_query($con, $sql);
 	$total_record = mysqli_num_rows($result); // 전체 글 수
