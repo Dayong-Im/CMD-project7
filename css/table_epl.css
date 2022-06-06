@@ -89,12 +89,13 @@ body{
     }
     table {
         margin-top: 25px;
+        margin-bottom: 200px;
         border-top: solid #ffc400;
         border-bottom: solid #ffc400;
         border-left: none;
         border-right: none;
         border-collapse: collapse;
-        font-family: "나눔고딕";
+        /*font-family: "나눔고딕";*/
         color: white;
         display: flex;
         justify-content: center;
@@ -107,3 +108,8 @@ body{
     .logo{ text-align: left; }
     .seq { text-align: center; }
     .point{ font-weight: bold; }
+    tbody {
+        border-top: solid 1px white;
+        margin-top: 25px; 
+        margin-bottom: 25px; 
+    }

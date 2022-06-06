@@ -5,15 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>프리미어리그 순위표</title>
-    <link rel="stylesheet" type="text/css" href="./css/common.css">
     <link rel="stylesheet" type="text/css" href="./css/table_epl.css">
+    <link rel="stylesheet" type="text/css" href="./css/nav.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ef7a0bbb15.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <?php include "header.php" ?>
+        <?php include "new_nav.php" ?>
     </header>
     <section id="main_img"></section>
-
+    <!--
     <nav id='sub_menu'>
         <ul>
             <li id="selected">
@@ -24,7 +27,7 @@
             </li>
         </ul>
     </nav>
-
+    -->
     <?php
         $league = $_GET["league"];
         switch ($_GET["league"]) {
@@ -52,9 +55,10 @@
     ?>
 
     <section id='contents'>
-        <h1 id="season">2020-2021 시즌</h1>
+        <h1 id="season">2021-2022 시즌</h1>
 
         <table>
+            <tbody>
             <tr>
                 <th>순위</th>
                 <th colspan="2" class="t">팀</th>
@@ -102,12 +106,13 @@
                 <td><?php echo $goalGap; ?></td>
             </tr>
             <?php endfor ?>
+            </tbody>
         </table>
 
     </section>
     <!--
     <footer>
-		<?php include "footer.php";?>
+		<?php //include "footer.php";?>
     </footer>
     -->
 </body>
