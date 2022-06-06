@@ -7,33 +7,33 @@
 ?>		
     <div class = "navbar">
         <div class = "menu"> 
-            <a href="#" class="top-menu"><i class="fa-solid fa-bars"></i></a>     
+            <a href="#" class="top-menu"><i class="fa-solid fa-bars"></i></a>
             <div class = "sub-menu">
                 <ul class = "sub-menu-list">
                     <li>
-                        <a href="team_table.php?league=epl"><span class = "title">EPL</span></a>
+                        <a href="team_table.php?league=epl"><div class = "title">프리미어리그</d></a>
                     </li>
                     <li>
-                        <a href="team_table.php?league=laliga"><span class = "title">La Liga</span></a>
+                        <a href="team_table.php?league=laliga"><div class = "title">프리메라리가</d></a>
                     </li>
                     <li>
-                        <a href="team_table.php?league=bun"><span class = "title">Bundes Liga</span></a>
+                        <a href="team_table.php?league=bun"><div class = "title">분데스리가</div></a>
                     </li>
                     <li>
-                        <a href="team_table.php?league=seria"><span class = "title">Seria</span></a>
+                        <a href="team_table.php?league=seria"><div class = "title">세리에A</d></a>
                     </li>
                     <li>
-                        <a href="team_table.php?league=ligue1"><span class = "title">Ligue</span></a>
+                        <a href="team_table.php?league=ligue1"><div class = "title">리그앙</div></a>
                     </li>
                     <li>
-                        <a href="board_list.php"><span class = "title">게시판</span></a>
+                        <a href="board_list.php"><div class = "title">게시판</div></a>
                     </li>
                 </ul>
             </div>
         </div>
         <div id="top">
             <h3>
-                <a href="new_main.php">U N L</a>
+                <a href="new_main.php">유니리그</a>
             </h3>
         </div>
         <div id = "top_menu">

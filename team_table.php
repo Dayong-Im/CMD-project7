@@ -5,15 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>프리미어리그 순위표</title>
-    <link rel="stylesheet" type="text/css" href="./css/table_epl.css">
     <link rel="stylesheet" type="text/css" href="./css/nav.css">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/table.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ef7a0bbb15.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <?php include "new_nav.php" ?>
+        <nav>
+            <?php include "new_nav.php"; ?>
+        </nav>
     </header>
     <section id="main_img"></section>
     <!--
@@ -106,6 +108,9 @@
                 <td><?php echo $goalGap; ?></td>
             </tr>
             <?php endfor ?>
+            <tr>
+                <td class="tail" colspan="11">자료제공: 네이버 스포츠</td>
+            </tr>
             </tbody>
         </table>
 
