@@ -11,19 +11,19 @@
             <div class = "sub-menu">
                 <ul class = "sub-menu-list">
                     <li>
-                        <a href="#"><span class = "title">EPL</span></a>
+                        <a href="team_table.php?league=epl"><span class = "title">EPL</span></a>
                     </li>
                     <li>
-                        <a href="#"><span class = "title">La Liga</span></a>
+                        <a href="team_table.php?league=laliga"><span class = "title">La Liga</span></a>
                     </li>
                     <li>
-                        <a href="#"><span class = "title">Bundes Liga</span></a>
+                        <a href="team_table.php?league=bun"><span class = "title">Bundes Liga</span></a>
                     </li>
                     <li>
-                        <a href="#"><span class = "title">Seria</span></a>
+                        <a href="team_table.php?league=seria"><span class = "title">Seria</span></a>
                     </li>
                     <li>
-                        <a href="#"><span class = "title">Ligue</span></a>
+                        <a href="team_table.php?league=ligue1"><span class = "title">Ligue</span></a>
                     </li>
                     <li>
                         <a href="board_list.php"><span class = "title">게시판</span></a>
