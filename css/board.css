@@ -79,3 +79,6 @@ section{
 #view_content li:nth-child(2) {	list-style: none; padding: 15px 15px 80px 15px; border-bottom: solid 1px #cccccc; }
 #view_content li:nth-child(3) button { padding: 5px 20px; margin: 15px 0 40px 720px; cursor: pointer; }
 
+.hidden{
+    display: none;
+}
