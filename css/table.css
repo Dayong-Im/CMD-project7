@@ -86,11 +86,7 @@ table {
     width: 100%;
     min-width: 1200px;
     margin-top: 25px;
-    margin-bottom: 200px;
-    /*
-    border-top: solid #ffc400;
-    border-bottom: solid #ffc400;
-    */
+    margin-bottom: 25px;
     border-collapse: collapse;
     font-family: 'GongGothicLight';
     border-left: none;

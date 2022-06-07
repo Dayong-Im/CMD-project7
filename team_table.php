@@ -36,11 +36,10 @@
     <link rel="stylesheet" type="text/css" href="./css/nav.css">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <link rel="stylesheet" type="text/css" href="./css/table.css">
+    <link rel="stylesheet" type="text/css" href="./css/img_slide.css">
+    <link rel="stylesheet" type="text/css" href="./css/new_footer.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ef7a0bbb15.js" crossorigin="anonymous"></script>
-    <!--
-        <script src="https://kit.fontawesome.com/ef7a0bbb15.js" crossorigin="anonymous"></script>
-    -->
     
     <style>
         /*
@@ -57,9 +56,7 @@
 </head>
 <body>
     <header>
-        <nav>
-            <?php include "new_nav.php"; ?>
-        </nav>
+        <?php include "new_nav.php"; ?>
     </header>
     <!-- 슬라이드쇼 컨테이너 -->
     <div class="slideshow-container">
@@ -168,12 +165,7 @@
         </table>
 
     </section>
-    
-    <!--
-    <footer>
-		<?php //include "new_footer.php";?>
-    </footer>
-    -->
+	<?php include "new_footer.php";?>
     <script src="js/img_slide.js"></script>
 </body>
 </html>

@@ -13,6 +13,7 @@
     font-style: normal;
 }
 *{margin: 0 0 0 0;}
+
 nav{
     
     border-bottom: solid 2px white;
@@ -44,10 +45,11 @@ nav{
 
 .sub-menu {
     position: fixed;
+    word-break: break-all;
     width: 200px;
     height: 100%;
     background-color: black;
-    transition: 0.5s;
+    transition:all 0.5s ease;
     z-index: 1;
 }
 .sub-menu ul {

@@ -3,14 +3,16 @@
 <head> 
 <meta charset="utf-8">
 <title>UNI League</title>
-<link rel="stylesheet" type="text/css" href="./css/board.css">
 <link rel="stylesheet" type="text/css" href="./css/nav.css">
+<link rel="stylesheet" type="text/css" href="./css/main.css">
+<link rel="stylesheet" type="text/css" href="./css/board.css">
+<link rel="stylesheet" type="text/css" href="./css/new_footer.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <script src="https://kit.fontawesome.com/ef7a0bbb15.js" crossorigin="anonymous"></script>
 </head>
 <body> 
 <header>
-	<?php include "new_main.php";?>
+	<?php include "new_nav.php";?>
 </header>  
 <section>
 		<div id="board_box">
@@ -57,7 +59,7 @@
 						$file_size = filesize($file_path);
 
 						echo "▷ 첨부파일 : $file_name ($file_size Byte) &nbsp;&nbsp;&nbsp;&nbsp;
-						<a href='download.php?num=$num&real_name=$real_name&file_name=$file_name&file_type=$file_type'>[저장]</a><br><br>";
+						<a href='board_download.php?num=$num&real_name=$real_name&file_name=$file_name&file_type=$file_type'>[저장]</a><br><br>";
 						}
 				?>
 				<?=$content?>
@@ -71,5 +73,6 @@
 		</ul>
 	</div> <!-- board_box -->
 </section> 
+<?php include "new_footer.php"; ?>
 </body>
 </html>

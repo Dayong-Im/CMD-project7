@@ -7,7 +7,7 @@
   
   echo("
        <script>
-          location.href = 'new_main.php';
+          location.href = 'index.php';
          </script>
        ");
 

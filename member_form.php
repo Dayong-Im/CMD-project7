@@ -3,8 +3,10 @@
 <head> 
 <meta charset="utf-8">
 <title>UNI League</title>
-<link rel="stylesheet" type="text/css" href="./css/member.css">
 <link rel="stylesheet" type="text/css" href="./css/nav.css">
+<link rel="stylesheet" type="text/css" href="./css/main.css">
+<link rel="stylesheet" type="text/css" href="./css/member.css">
+<link rel="stylesheet" type="text/css" href="./css/new_footer.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <script src="https://kit.fontawesome.com/ef7a0bbb15.js" crossorigin="anonymous"></script>
 <script>
@@ -77,10 +79,10 @@
 </head>
 <body> 
 	<header>
-        <?php include "new_main.php";?>
+        <?php include "new_nav.php";?>
     </header>
 	<section>
-        <div id="main_content" style = "height: 112%">
+        <div id="main_content">
       		<div id="join_box">
           	<form  name="member_form" method="post" action="member_insert.php">
 			    <h2>회원 가입</h2>
@@ -140,6 +142,7 @@
             </div> <!-- join_box -->
         </div> <!-- main_content -->
 	</section> 
+    <?php include "new_footer.php"?>
 </body>
 </html>
 

@@ -4,7 +4,8 @@
     else $userid = "";
     if (isset($_SESSION["username"])) $username = $_SESSION["username"];
     else $username = "";
-?>		
+?>
+<nav>		
     <div class = "navbar">
         <div class = "menu"> 
             <a href="#" class="top-menu"><i class="fa-solid fa-bars"></i></a>
@@ -33,7 +34,7 @@
         </div>
         <div id="top">
             <h3>
-                <a href="new_main.php">UNI LEAGUE</a>
+                <a href="index.php">UNI LEAGUE</a>
             </h3>
         </div>
         <div id = "top_menu">
@@ -59,3 +60,4 @@
             </ul>
         </div>
     </div>
+</nav>

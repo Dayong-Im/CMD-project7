@@ -7,16 +7,19 @@ body{
     height: 100vh;
 }
 
-#main_content { position: relative; width: 100%; height: 138%;
+
+#main_content { position: relative; width: 100%; height: 100%;
     display: flex;
     justify-content: center;
     align-items: center; 
     background-color: #212121; 
     font-family: 'IBM Plex Sans KR';
 }
+
 #main_content ul{
     padding: 0;
 }
+/*
 #main_content #latest a{
     float: right;
     margin-top: 20px;
@@ -50,3 +53,4 @@ body{
 #point_rank span:nth-child(2) { width: 100px; }
 #point_rank span:nth-child(3) { width: 100px; }
 #point_rank span:nth-child(4) { width: 100px; }
+*/
