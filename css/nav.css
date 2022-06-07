@@ -12,17 +12,18 @@
     font-weight: normal;
     font-style: normal;
 }
-
-
+*{margin: 0 0 0 0;}
 nav{
     
     border-bottom: solid 2px white;
+    height: 100px;
 }
 
 .navbar{
     display: flex;
     justify-content: space-between;
     background-color: black;
+    height: 100%;
 }
 
 .navbar .menu{
@@ -88,9 +89,10 @@ nav{
 /* 반응형 메뉴바 마지막 */
 
 .navbar #top{
-    width: 33%;
     text-align: center;
     margin-left: 23%;
+    display: flex;
+    align-items: center;
 }
 
 .navbar #top h3 a{
