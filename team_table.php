@@ -23,7 +23,7 @@
         include ('db/db.php');
         $con = mysqli_connect($db_host, $db_user, $db_pw, $db_name);
         
-        $background = "img/".$league."/".$_GET["league"].".png";
+        $background = "img/".$league."/".$_GET["league"].".webp";
     ?>
 
 <!DOCTYPE html>
@@ -37,16 +37,21 @@
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <link rel="stylesheet" type="text/css" href="./css/table.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/ef7a0bbb15.js" crossorigin="anonymous"></script>
+    <!--
+        <script src="https://kit.fontawesome.com/ef7a0bbb15.js" crossorigin="anonymous"></script>
+    -->
+    
     <style>
-        #main_img {
+        /*
+        #main_img { 
             width: 100%;
-            height: 600px;
             background-image: url('<?php echo $background; ?>');
             background-repeat: no-repeat;
             background-position: center;
+            margin-top: 0px;
             margin-bottom: 30px;
         }
+        */
     </style>
 </head>
 <body>
@@ -55,7 +60,39 @@
             <?php include "new_nav.php"; ?>
         </nav>
     </header>
-    <section id="main_img" ></section>
+    <!-- 슬라이드쇼 컨테이너 -->
+    <div class="slideshow-container">
+        <!-- 숫자와 캡션이 있는 이미지 -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="img/1/epl.webp" style="width:100%">
+            <div class="text">첫 번째 사진</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="img/1/epl2.png" style="width:100%">
+            <div class="text">두 번째 사진</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="img/1/epl3.png" style="width:100%">
+            <div class="text">세 번째 사진</div>
+        </div>
+        <!-- 다음, 이전 이미지 버튼 -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <br>
+
+    <!-- 현재 이미지를 알려주는 하단의 점 -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+    <!-- <section id="main_img" ></section> -->
     <!--
     <nav id='sub_menu'>
         <ul>
@@ -136,5 +173,6 @@
 		<?php //include "new_footer.php";?>
     </footer>
     -->
+    <script src="js/img_slide.js"></script>
 </body>
 </html>
