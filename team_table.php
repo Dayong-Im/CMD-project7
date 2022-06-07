@@ -45,7 +45,7 @@
         /*
         #main_img { 
             width: 100%;
-            background-image: url('<?php echo $background; ?>');
+            background-image: url('<?php //echo $background; ?>');
             background-repeat: no-repeat;
             background-position: center;
             margin-top: 0px;
@@ -79,17 +79,17 @@
             <div class="text">세 번째 사진</div>
         </div>
         <!-- 다음, 이전 이미지 버튼 -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <a class="prev" onclick="plusSlides(-1); window.clearTimeout();">&#10094;</a>
+        <a class="next" onclick="plusSlides(1); window.clearTimeout();">&#10095;</a>
     </div>
 
     <br>
 
     <!-- 현재 이미지를 알려주는 하단의 점 -->
     <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(1); window.clearTimeout();"></span> 
+        <span class="dot" onclick="currentSlide(2); window.clearTimeout();"></span> 
+        <span class="dot" onclick="currentSlide(3); window.clearTimeout();"></span> 
     </div>
     
     <!-- <section id="main_img" ></section> -->
