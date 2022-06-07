@@ -10,7 +10,7 @@
 <style>
     body{
         height: 100vh;
-        background-image: url("img/new_background.jpg");
+        background-image: url("img/bg1.jpg");
         background-size: cover;
     }
 </style>

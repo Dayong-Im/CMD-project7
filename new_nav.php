@@ -33,7 +33,7 @@
         </div>
         <div id="top">
             <h3>
-                <a href="new_main.php">유니리그</a>
+                <a href="new_main.php">UNI LEAGUE</a>
             </h3>
         </div>
         <div id = "top_menu">

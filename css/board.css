@@ -4,7 +4,8 @@
 body{
     font-family: 'IBM Plex Sans KR';
     background-color: black;
-    margin: 0;
+    margin: 8px;
+    height: 100vh;
 }
 
 section{

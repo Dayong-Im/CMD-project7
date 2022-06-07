@@ -16,6 +16,8 @@
 body{
     font-family: 'IBM Plex Sans KR';
     /*font-size: 14px;*/
+    margin: 8px;
+    height: 100vh;
     color: #e0e0e0;
     background-color: #474747;
 }
