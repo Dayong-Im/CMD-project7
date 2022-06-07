@@ -1,12 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cute+Font&family=Do+Hyeon&family=Gaegu:wght@700&family=Gugi&family=Hahmlet:wght@300&family=IBM+Plex+Sans+KR:wght@500&family=Inspiration&family=Koulen&family=Lora&family=Nanum+Gothic+Coding:wght@400;700&family=Noto+Sans+KR:wght@500&family=Pinyon+Script&family=Single+Day&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+@font-face {
+    font-family: 'KOHIBaeumOTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/KOHIBaeumOTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body{
     font-family: 'IBM Plex Sans KR';
     /*font-size: 14px;*/
+<<<<<<< HEAD
     color: white;
     background-color: black;
     margin: 8px;
     height: 100vh;
+=======
+    color: #e0e0e0;
+    background-color: #e0e0e0;
+>>>>>>> 9440ac63be7d1c0cb3c2082b8f5f1830a8f6dbcf
 }
 
 /*
@@ -22,17 +35,11 @@ body{
 li {
     list-style-type: none;
 }
-#main_img {
-    width: 100%;
-    height: 600px;
-    background-image: url('../img/pre/pre1.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 30px;
-}
+
+
 #contents {
     width: 100%;
-    background-color: black;
+    background-color: #e0e0e0;
 }
 
 
@@ -62,6 +69,8 @@ li {
 }
 */
 
+
+
 footer {
     clear: both;
     width: 100%;
@@ -76,8 +85,8 @@ footer {
 #footer_logo {
     float: left;
     margin: 50px 0 0 30px;
-    font-size: 24pt;
-    font-family: "Typo_SsangmunDong";
+    font-size: 30pt;
+    font-family: 'Black Han Sans', sans-serif;
     color: white;
 }
 #address {
@@ -85,10 +94,13 @@ footer {
     margin: 50px 30px 0 0;
     color: white;
 }
+
+
 #season{
+    font-size: 30px;
     margin-top: 25px;
-    color: white;
-    font-family: "Typo_SsangmunDong";
+    color: #2c2a29;
+    font-family: 'KOHIBaeumOTF';
     text-align: center;
 }
 th, td {
@@ -97,8 +109,12 @@ th, td {
     padding: 6px;
     border-bottom: solid 1px white;
     text-align: center;
+    word-break: break-all;
 }
 table {
+    table-layout: fixed;
+    width: 100%;
+    min-width: 1200px;
     margin-top: 25px;
     margin-bottom: 200px;
     border-top: solid #ffc400;
@@ -106,25 +122,47 @@ table {
     border-left: none;
     border-right: none;
     border-collapse: collapse;
+    font-family: 'KOHIBaeumOTF';
     /*font-family: "나눔고딕";*/
     color: white;
     display: flex;
     justify-content: center;
 }
+
+@media screen and (max-width:768px) {
+    table{
+        overflow-x: auto;
+    }
+    tr {
+        position: relative;
+    }
+    th {
+        position: relative;
+    }
+}
+
 .team{
     text-align: left; 
-    width: 200px;
+    width: 250px;
 }
 .t   { text-align: left; }
 .logo{ text-align: left; }
 .seq { text-align: center; }
 .point{ font-weight: bold; }
+.head{
+    border-bottom: 0px;
+}
 .tail { 
+    padding-right: 50px;
     text-align: right;
     border-bottom: 0px;
 }
 tbody {
-    border-top: solid 1px white;
+    color: #2c2a29;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
     margin-top: 25px; 
     margin-bottom: 25px; 
 }
