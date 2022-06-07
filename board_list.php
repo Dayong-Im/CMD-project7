@@ -23,7 +23,7 @@
 <section>
 	<div id="board_box">
 		<h3>
-			게시판 > 목록보기
+			커뮤니티&nbsp;&nbsp;|&nbsp;&nbsp;목록
 		</h3>
 		<ul id="board_list">
 				<li>

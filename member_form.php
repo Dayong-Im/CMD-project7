@@ -36,15 +36,9 @@
             return;
         }
 
-        if (!document.member_form.email1.value) {
+        if (!document.member_form.email.value) {
             alert("이메일 주소를 입력하세요!");    
-            document.member_form.email1.focus();
-            return;
-        }
-
-        if (!document.member_form.email2.value) {
-            alert("이메일 주소를 입력하세요!");    
-            document.member_form.email2.focus();
+            document.member_form.email.focus();
             return;
         }
 
@@ -122,13 +116,7 @@
                     <div class="form email">
                         <div class="col1">이메일</div>
                         <div class="col2">
-							<input type="text" name="email1">@
-                            <select style = "width: 200px;">
-                                <option value="">이메일 선택</option>
-                                <option value="naver.com">naver.com</option>
-                                <option value="daum.net">daum.net</option>
-                                <option value="gmail.com">gmail.com</option>
-                            </select>
+							<input type="text" name="email">
                         </div>                 
                     </div>
                     <div class="clear"></div>

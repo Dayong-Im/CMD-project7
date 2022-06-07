@@ -17,7 +17,7 @@
 <section>
 		<div id="board_box">
 			<h3 class="title" style = "margin: 0;">
-			게시판 > 내용보기
+			커뮤니티&nbsp;&nbsp;|&nbsp;&nbsp;게시글
 		</h3>
 <?php
 	$num  = $_GET["num"];
@@ -67,8 +67,10 @@
 		</ul>
 		<ul class="buttons">
 				<li><button onclick="location.href='board_list.php?page=<?=$page?>'">목록</button></li>
-				<li><button onclick="location.href='board_modify_form.php?num=<?=$num?>&page=<?=$page?>'">수정</button></li>
-				<li><button onclick="location.href='board_delete.php?num=<?=$num?>&page=<?=$page?>'">삭제</button></li>
+				<li><button onclick="location.href='board_modify_form.php?num=<?=$num?>&page=<?=$page?>'"
+					<?php if ($_SESSION["userid"]!=$row["name"]) echo " class=\"hidden\""?>>수정</button></li>
+				<li><button onclick="location.href='board_delete.php?num=<?=$num?>&page=<?=$page?>'"
+					<?php if ($_SESSION["userid"]!=$row["name"]) echo " class=\"hidden\""?>>삭제</button></li>
 				<li><button onclick="location.href='board_form.php'">글쓰기</button></li>
 		</ul>
 	</div> <!-- board_box -->
