@@ -71,16 +71,16 @@
     
 
     <section id='contents'>
-        <h1 id="season">2021-2022 시즌</h1>
 
         <table>
             <tbody>
             <tr><td class="head" colspan="11"></td></tr>
+            <tr><td id="season" colspan="11">2021-2022 시즌</td></tr>
                 <tr>
                     <th>순위</th>
                     <th colspan="2" class="t">팀</th>
                     <th>경기수</th>
-                    <th class="point">승점</th>
+                    <th>승점</th>
                     <th>승</th>
                     <th>무</th>
                     <th>패</th>

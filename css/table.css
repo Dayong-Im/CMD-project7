@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cute+Font&family=Do+Hyeon&family=Gaegu:wght@700&family=Gugi&family=Hahmlet:wght@300&family=IBM+Plex+Sans+KR:wght@500&family=Inspiration&family=Koulen&family=Lora&family=Nanum+Gothic+Coding:wght@400;700&family=Noto+Sans+KR:wght@500&family=Pinyon+Script&family=Single+Day&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
-
+@font-face {
+    font-family: 'GongGothicMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 @font-face {
     font-family: 'KOHIBaeumOTF';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/KOHIBaeumOTF.woff') format('woff');
@@ -12,7 +17,7 @@ body{
     font-family: 'IBM Plex Sans KR';
     /*font-size: 14px;*/
     color: #e0e0e0;
-    background-color: #e0e0e0;
+    background-color: #474747;
 }
 
 /*
@@ -32,7 +37,7 @@ li {
 
 #contents {
     width: 100%;
-    background-color: #e0e0e0;
+    background-color: #474747;
 }
 
 
@@ -88,19 +93,11 @@ footer {
     color: white;
 }
 
-
-#season{
-    font-size: 30px;
-    margin-top: 25px;
-    color: #2c2a29;
-    font-family: 'KOHIBaeumOTF';
-    text-align: center;
-}
 th, td {
     width: 80px;
     height: 30px;
     padding: 6px;
-    border-bottom: solid 1px white;
+    border-bottom: solid 1px #e0e0e0;
     text-align: center;
     word-break: break-all;
 }
@@ -110,12 +107,15 @@ table {
     min-width: 1200px;
     margin-top: 25px;
     margin-bottom: 200px;
+    /*
     border-top: solid #ffc400;
     border-bottom: solid #ffc400;
+    */
     border-left: none;
     border-right: none;
     border-collapse: collapse;
-    font-family: 'KOHIBaeumOTF';
+    /*font-family: 'KOHIBaeumOTF';*/
+    font-family: 'GongGothicMedium';
     /*font-family: "나눔고딕";*/
     color: white;
     display: flex;
@@ -141,8 +141,21 @@ table {
 .t   { text-align: left; }
 .logo{ text-align: left; }
 .seq { text-align: center; }
-.point{ font-weight: bold; }
+.point{ 
+    font-weight: bold;
+    color: lightcoral;
+}
+#season{
+    font-size: 30px;
+    margin-top: 25px;
+    color: #e0e0e0;
+    font-family: 'KOHIBaeumOTF';
+    text-align: center;
+    border-top: 0px;
+    border-bottom: 0px;
+}
 .head{
+    border-top: 0px;
     border-bottom: 0px;
 }
 .tail { 
@@ -151,11 +164,11 @@ table {
     border-bottom: 0px;
 }
 tbody {
-    color: #2c2a29;
     border-radius: 50px;
-    background: linear-gradient(145deg, #cacaca, #f0f0f0);
-    box-shadow:  20px 20px 60px #bebebe,
-                -20px -20px 60px #ffffff;
+    background: #474747;
+    box-shadow:  20px 20px 60px #3c3c3c,
+                -20px -20px 60px #525252;
     margin-top: 25px; 
     margin-bottom: 25px; 
+    padding: 0 30px 0 30px;
 }
