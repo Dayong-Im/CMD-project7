@@ -68,9 +68,9 @@
 		<ul class="buttons">
 				<li><button onclick="location.href='board_list.php?page=<?=$page?>'">목록</button></li>
 				<li><button onclick="location.href='board_modify_form.php?num=<?=$num?>&page=<?=$page?>'"
-					<?php if ($_SESSION["userid"]!=$row["name"]) echo " class=\"hidden\""?>>수정</button></li>
+					<?php if ( !isset($_SESSION["userid"]) || $_SESSION["userid"]!=$row["id"] ) echo " class=\"hidden\""; ?>>수정</button></li>
 				<li><button onclick="location.href='board_delete.php?num=<?=$num?>&page=<?=$page?>'"
-					<?php if ($_SESSION["userid"]!=$row["name"]) echo " class=\"hidden\""?>>삭제</button></li>
+					<?php if ( !isset($_SESSION["userid"]) || $_SESSION["userid"]!=$row["id"] ) echo " class=\"hidden\""; ?>>삭제</button></li>
 				<li><button onclick="location.href='board_form.php'">글쓰기</button></li>
 		</ul>
 	</div> <!-- board_box -->

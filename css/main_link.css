@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'KOHIBaeumOTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/KOHIBaeumOTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GongGothicLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+#link-body{
+    height: 100vh;
+    background-color: white;
+}
+#entry{
+    margin:auto;
+    padding-top: 50px;
+    font-family: 'GongGothicLight';
+    font-size:50px;
+    text-align: center;
+    color:#474747;
+}
+#wrapper{
+    padding-top: 50px;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+}
+.logoimagewrapper{
+    float:left;
+    width: 33%;
+    margin-top: 50px;
+}
+.logoimage-center{
+    margin:auto;
+    width:200px;
+    height:200px;
+    border-radius: 50px;
+    background: white;
+    border-radius: 25px;
+    background: #ffffff;
+    box-shadow:  20px 20px 70px #a3a3a3,
+                -20px -20px 70px #ffffff;
+}
+.logoimage-left{
+    float:right;
+    width:200px;
+    height:200px;
+    border-radius: 50px;
+    background: white;
+    border-radius: 25px;
+    background: #ffffff;
+    box-shadow:  20px 20px 70px #a3a3a3,
+                -20px -20px 70px #ffffff;
+}
+.logoimage-right{
+    float:left;
+    width:200px;
+    height:200px;
+    border-radius: 50px;
+    background: white;
+    border-radius: 25px;
+    background: #ffffff;
+    box-shadow:  20px 20px 70px #a3a3a3,
+                -20px -20px 70px #ffffff;
+}
+.logolink{
+    margin: 20px 0 0 20px;
+    width: 80px;
+    height: 80px;
+}
+.linkul{
+    padding-left: 28px;
+    margin: auto;
+    list-style: none;
+    font-family: 'KOHIBaeumOTF';
+    font-size:22px;
+    color: #474747;
+}

@@ -1,4 +1,5 @@
 <?php
+        $IMAGES=5;
         $league = $_GET["league"];
         switch ($_GET["league"]) {
             case "epl":
@@ -32,7 +33,15 @@
 <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>프리미어리그 순위표</title>
+    <title>UNI League - 
+        <?php switch($league) {
+                case 1: echo "프리미어리그 순위"; break; 
+                case 2: echo "라리가 순위"; break; 
+                case 3: echo "분데스리가 순위"; break;
+                case 4: echo "세리에A 순위"; break;
+                case 5: echo "리그앙 순위"; break;
+                default: break;} ?>
+    </title>
     <link rel="stylesheet" type="text/css" href="./css/nav.css">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <link rel="stylesheet" type="text/css" href="./css/table.css">
@@ -61,52 +70,34 @@
     <!-- 슬라이드쇼 컨테이너 -->
     <div class="slideshow-container">
         <!-- 숫자와 캡션이 있는 이미지 -->
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="img/1/epl.webp" style="width:100%">
-            <div class="text">첫 번째 사진</div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="img/1/epl2.png" style="width:100%">
-            <div class="text">두 번째 사진</div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="img/1/epl3.png" style="width:100%">
-            <div class="text">세 번째 사진</div>
-        </div>
-        <!-- 다음, 이전 이미지 버튼 -->
-        <a class="prev" onclick="plusSlides(-1); window.clearTimeout();">&#10094;</a>
-        <a class="next" onclick="plusSlides(1); window.clearTimeout();">&#10095;</a>
+        <?php for($i=0; $i<$IMAGES; $i++): ?>
+            <div class="mySlides fade">
+                <div class="numbertext"><?php echo $i+1;?> / 5</div>
+                <img <?php echo "src=\"img/".$league."/".$_GET["league"].($i+1).".webp\""; ?> style="width:100%">
+                <div class="text"><?php switch($league) {
+                case 1: echo "@Premierleague"; break; 
+                case 2: echo "@LaLigaSmartbank"; break; 
+                case 3: echo "@Bundesliga"; break;
+                case 4: echo "@Seria A TIM"; break;
+                case 5: echo "@Ligue1"; break;
+                default: break;} ?></div>
+            </div>
+            <!-- 다음, 이전 이미지 버튼 -->       
+        <?php endfor?>
+            <a class="prev" onclick="plusSlides(-1); clearInterval(a);">&#10094;</a>
+            <a class="next" onclick="plusSlides(1); clearInterval(a);">&#10095;</a>
     </div>
 
     <br>
 
     <!-- 현재 이미지를 알려주는 하단의 점 -->
     <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1); window.clearTimeout();"></span> 
-        <span class="dot" onclick="currentSlide(2); window.clearTimeout();"></span> 
-        <span class="dot" onclick="currentSlide(3); window.clearTimeout();"></span> 
+        <?php for($i=0; $i<$IMAGES; $i++): ?>
+            <span class="dot" onclick="currentSlide(<?php echo $i+1;?>); clearInterval(a);"></span> 
+        <?php endfor?>
     </div>
     
-    <!-- <section id="main_img" ></section> -->
-    <!--
-    <nav id='sub_menu'>
-        <ul>
-            <li id="selected">
-                팀 순위
-            </li>
-            <li>
-                <a href="table_epl_per.php">개인 순위</a>
-            </li>
-        </ul>
-    </nav>
-    -->
-    
-
     <section id='contents'>
-
         <table>
             <tbody>
             <tr><td class="head" colspan="11"></td></tr>
@@ -146,7 +137,7 @@
                 
                 ?>
                 <td class="seq"><?php echo $rank; ?></td>
-                <td class="logo"><img src=<?php echo $logo; ?>></td>
+                <td class="tablelogo"><img src=<?php echo $logo; ?>></td>
                 <td class="team"><?php echo $teamName; ?></td>
                 <td><?php echo $gameCount; ?></td>
                 <td class="point"><?php echo $gainPoint; ?></td>

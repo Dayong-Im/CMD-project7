@@ -12,7 +12,7 @@ use Symfony\Component\DomCrawler\Crawler;
 function scrapWebpage(string $url, string $selector): array
 {
     $res = [];
-    // 열기
+    // 웹페이지 열기
     try {
         $client = new GuzzleClient();
         $response = $client->request('GET', $url);
@@ -21,18 +21,19 @@ function scrapWebpage(string $url, string $selector): array
     }
     
     if ($response->getStatusCode() == 200) {
-        // 찾기
+        // 해당 선택자 찾기
         $html = strval($response->getBody());
         
         $crawler = new Crawler($html);
         $crawler = $crawler->filter($selector);
-        // 보기
+
         foreach ($crawler as $domElement) {
             $res[] = $domElement->nodeValue;
         }
     }
     return $res;
-} // 스크랩 함수
+}
+
 
 // 스크랩 테스트 함수
 function printLeagueData($scrap_data) {

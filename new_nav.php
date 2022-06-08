@@ -29,10 +29,25 @@
                     <li>
                         <a href="board_list.php"><div class = "title">게시판</div></a>
                     </li>
+                    <li>
+                        <a href="site_map.php"><div class = "title">사이트맵</div></a>
+                    </li>
                 </ul>
             </div>
         </div>
         <div id="top">
+            <?php
+                if($_SERVER['REQUEST_URI'] == "/unileague/team_table.php?league=epl")
+                    echo "<div class=\"logowrapper\"><img class=\"logo\" src=\"img/".$league."/".$_GET["league"]."_logo.png\"></div>";
+                if($_SERVER['REQUEST_URI'] == "/unileague/team_table.php?league=laliga")
+                    echo "<div class=\"logowrapper\"><img class=\"logo\" src=\"img/".$league."/".$_GET["league"]."_logo.png\"></div>";
+                if($_SERVER['REQUEST_URI'] == "/unileague/team_table.php?league=bun")
+                    echo "<div class=\"logowrapper\"><img class=\"logo\" src=\"img/".$league."/".$_GET["league"]."_logo.png\"></div>";
+                if($_SERVER['REQUEST_URI'] == "/unileague/team_table.php?league=seria")
+                    echo "<div class=\"logowrapper\"><img class=\"logo\" src=\"img/".$league."/".$_GET["league"]."_logo.png\"></div>";
+                if($_SERVER['REQUEST_URI'] == "/unileague/team_table.php?league=ligue1")
+                    echo "<div class=\"logowrapper\"><img class=\"logo\" src=\"img/".$league."/".$_GET["league"]."_logo.png\"></div>";
+            ?>
             <h3>
                 <a href="index.php">UNI LEAGUE</a>
             </h3>

@@ -49,30 +49,6 @@ li {
     background-color: #e0e0e0;;
 }
 
-/*서브 메뉴 CSS (사용 중단)*/
-/*
-#sub_menu {
-    width: 150px;
-    float: right;
-    margin-top: 75px;
-    margin-right: 150px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    border-radius: 15px;
-    border: solid 1px white;
-}
-#sub_menu li {
-    font-family: "Typo_SsangmunDong";
-    font-size: 20pt;
-    text-align: center;
-    padding: 10px;
-}
-#selected{
-    background-color: rgb(56, 56, 56);
-    color: white;
-    border-radius: 15px;
-}
-*/
 th, td {
     width: 80px;
     height: 30px;
@@ -100,7 +76,7 @@ table {
     width: 250px;
 }
 .t   { text-align: left; }
-.logo{ text-align: left; }
+.tablelogo{ text-align: left; }
 .seq { text-align: center; }
 .point{ 
     font-weight: bold;

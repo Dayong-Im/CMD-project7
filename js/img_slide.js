@@ -27,8 +27,7 @@ function showSlides(n) {
     dots[slideIndex-1].className += " active";
 }
 
-setInterval(()=> {
-    slideIndex++;
-    showSlides(slideIndex);
-}, 5000);
-
+    const a = setInterval(()=> {
+        slideIndex++;
+        showSlides(slideIndex);
+    }, 5000);
