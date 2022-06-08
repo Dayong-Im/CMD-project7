@@ -2,7 +2,7 @@
         <h1 id="entry">자료 제공 사이트 바로가기</h1>
         <div id="wrapper">
             <div class="logoimagewrapper">
-            <div class="logoimage-left" onclick="location.href='https://sports.news.naver.com/wfootball/record/index'">
+            <div class="logoimage-left" onclick="window.open('https://sports.news.naver.com/wfootball/record/index')">
                 <img class="logolink" src="img/naver.png" alt="logo">
                 <ul class="linkul">
                     <li>네이버</li>
@@ -11,7 +11,7 @@
             </div>
             </div>
             <div class="logoimagewrapper">
-            <div class="logoimage-center" onclick="location.href='https://www.premierleague.com/'">
+            <div class="logoimage-center" onclick="window.open('https://www.premierleague.com/')">
                 <img class="logolink" src="img/1/epl_logo.png" alt="logo">
                 <ul class="linkul">
                     <li>프리미어리그</li>
@@ -20,7 +20,7 @@
             </div>
             </div>
             <div class="logoimagewrapper">
-            <div class="logoimage-right" onclick="location.href='https://www.laliga.com/en-GB'">
+            <div class="logoimage-right" onclick="window.open('https://www.laliga.com/en-GB')">
                 <img class="logolink" src="img/2/laliga_logo.png" alt="logo">
                 <ul class="linkul">
                     <li>프리메라리가</li>
@@ -29,7 +29,7 @@
             </div>
             </div>
             <div class="logoimagewrapper">
-            <div class="logoimage-left" onclick="location.href='https://www.bundesliga.com/en/bundesliga'">
+            <div class="logoimage-left" onclick="window.open('https://www.bundesliga.com/en/bundesliga')">
                 <img class="logolink" src="img/3/bun_logo.png" alt="logo">
                 <ul class="linkul">
                     <li>분데스리가</li>
@@ -38,7 +38,7 @@
             </div>
             </div>
             <div class="logoimagewrapper">
-            <div class="logoimage-center" onclick="location.href='https://www.legaseriea.it/en'">
+            <div class="logoimage-center" onclick="window.open('https://www.legaseriea.it/en')">
                 <img class="logolink" src="img/4/seria_logo.png" alt="logo">
                 <ul class="linkul">
                     <li>세리에A</li>
@@ -47,7 +47,7 @@
             </div>
             </div>
             <div class="logoimagewrapper">
-            <div class="logoimage-right" onclick="location.href='https://www.ligue1.com/'">
+            <div class="logoimage-right" onclick="window.open('https://www.ligue1.com/')">
                 <img class="logolink" src="img/5/ligue1_logo.png" alt="logo">
                 <ul class="linkul">
                     <li>리그앙</li>

@@ -27,10 +27,10 @@
                         <a href="team_table.php?league=ligue1"><div class = "title">리그앙</div></a>
                     </li>
                     <li>
-                        <a href="board_list.php"><div class = "title">게시판</div></a>
+                        <a href="board_list.php"><div class = "title">커뮤니티</div></a>
                     </li>
                     <li>
-                        <a href="site_map.php"><div class = "title">사이트맵</div></a>
+                        <a href="site_map.php"><div class = "title">바로가기</div></a>
                     </li>
                 </ul>
             </div>

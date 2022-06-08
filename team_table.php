@@ -84,8 +84,8 @@
             </div>
             <!-- 다음, 이전 이미지 버튼 -->       
         <?php endfor?>
-            <a class="prev" onclick="plusSlides(-1); clearInterval(a);">&#10094;</a>
-            <a class="next" onclick="plusSlides(1); clearInterval(a);">&#10095;</a>
+            <a class="prev" onclick="plusSlides(-1);">&#10094;</a>
+            <a class="next" onclick="plusSlides(1);">&#10095;</a>
     </div>
 
     <br>
@@ -93,7 +93,7 @@
     <!-- 현재 이미지를 알려주는 하단의 점 -->
     <div style="text-align:center">
         <?php for($i=0; $i<$IMAGES; $i++): ?>
-            <span class="dot" onclick="currentSlide(<?php echo $i+1;?>); clearInterval(a);"></span> 
+            <span class="dot" onclick="currentSlide(<?php echo $i+1;?>);"></span> 
         <?php endfor?>
     </div>
     

@@ -1,6 +1,7 @@
--- use uni; --서버 배포시 사용
+use uni;
+--서버 배포시 사용
 
-use sample;
+--use sample;
 
 -- 게시판 테이블 생성
 create table board (

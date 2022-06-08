@@ -33,6 +33,7 @@
     width: 33%;
     margin-top: 50px;
 }
+
 .logoimage-center{
     margin:auto;
     width:200px;
@@ -44,6 +45,17 @@
     box-shadow:  20px 20px 70px #a3a3a3,
                 -20px -20px 70px #ffffff;
 }
+
+.logoimage-center:hover{
+    cursor:pointer;
+}
+.logoimage-left:hover{
+    cursor:pointer;
+}
+.logoimage-right:hover{
+    cursor:pointer;
+}
+
 .logoimage-left{
     float:right;
     width:200px;

@@ -2,10 +2,8 @@
     $id   = $_POST["id"];
     $pass = $_POST["pass"];
     $name = $_POST["name"];
-    $email1  = $_POST["email1"];
-    $email2  = $_POST["email2"];
+    $email  = $_POST["email"];
 
-    $email = $email1."@".$email2;
     $regist_day = date("Y-m-d (H:i)");  // 현재의 '년-월-일-시-분'을 저장
 
     include ('db/db.php');

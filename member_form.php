@@ -58,8 +58,7 @@
         document.member_form.pass.value = "";
         document.member_form.pass_confirm.value = "";
         document.member_form.name.value = "";
-        document.member_form.email1.value = "";
-        document.member_form.email2.value = "";
+        document.member_form.email.value = "";
         document.member_form.id.focus();
         return;
     }
