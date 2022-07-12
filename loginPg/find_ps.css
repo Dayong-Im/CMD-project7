@@ -81,6 +81,7 @@ h2{
     font-style: oblique;
 }
 .button{
+    cursor: pointer;
     float: right;
     margin-top: 50px;
     padding-top: 1px;
