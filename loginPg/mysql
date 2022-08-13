@@ -1,8 +1,0 @@
- create table user_info(
-    id int primary key auto_increment,
-    user_major text,
-    user_num int,
-    user_name text,
-    user_id text,
-    user_ps text);
-    
